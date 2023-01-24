@@ -45,8 +45,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col items-center py-20 px-8 dark:text-white md:flex-row">
           <div className="mb-16 flex-grow text-center dark:text-white md:w-1/2 md:pr-16 md:text-left lg:pr-24">
             <h1 className="mb-4 text-3xl font-medium text-gray-900 dark:text-white sm:text-6xl">
-              Hi!👋
-              <p>My name is Takatsuki, Kyosuke.</p>
+              Hi!👋 My name is Takatsuki, Kyosuke.
             </h1>
             <p className="mb-8 leading-relaxed">
               はじめまして。以下の技術を用いてポートフォリオを作成しました。
