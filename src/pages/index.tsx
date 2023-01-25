@@ -2,10 +2,11 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
-// import "../styles/globals.css";
+import ThemeToggler from "../ThemeToggler";
+import imgs from "/public/img/Sky.png";
+import imgpc from "/public/img/pc.png";
 
 const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
@@ -36,7 +37,7 @@ export default function Home() {
             >
               Skills
             </a> */}
-            {/* <ThemeSwitch /> */}
+            <ThemeToggler />
           </nav>
         </div>
       </header>
@@ -54,17 +55,17 @@ export default function Home() {
             <p className="mb-8 leading-relaxed">
               使用技術:Next.js TypeScript Tailwindcss
             </p>
-            {/* <button className="rounded border-0 bg-green-500 py-2 px-6 text-lg text-white duration-300 hover:bg-green-600">
+            {/* <button className="rounded border-0 bg-green-500 py-2 px-6 text-lg text-white duration-300 hover:bg-sky-600">
               Contact
             </button> */}
           </div>
           <div className="w-5/6 md:w-1/2 lg:max-w-lg">
-            <img
-              src="./img/Sky.png"
+            <Image
+              src={imgs}
               alt="imgs"
               className="rounded-lg"
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
               placeholder="blur"
             />
           </div>
@@ -229,10 +230,11 @@ export default function Home() {
         <div className="container mx-auto flex flex-wrap py-24 px-5">
           {/* left side */}
           <div className="mb-10 flex w-full justify-center lg:mb-0 lg:w-1/2">
-            <img
-              src="./img/pc.png"
+            <Image
+              src={imgpc}
               alt="imgpc"
-              className="lg:pl-15 w-full rounded lg:w-1/2 lg:py-6"
+              // className="lg:pl-15 w-full rounded lg:w-3/4 lg:py-6"
+              className="lg:px-18 mb-10 flex-shrink-0 rounded-lg lg:mt-12 lg:w-3/4 lg:py-5"
             />
           </div>
           {/* right side */}
@@ -240,65 +242,74 @@ export default function Home() {
             <h1 className="mb-10 text-center text-2xl font-medium text-gray-900 dark:text-white sm:text-3xl lg:text-left">
               My Skills
             </h1>
-            <div className="w-full">
+            <div className="w-full dark:text-white">
               <h2>Linux</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "70%" }}
                 >
                   70%
                 </div>
               </div>
               <h2>Java</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "45%" }}
                 >
                   45%
                 </div>
               </div>
               <h2>Ruby</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "35%" }}
                 >
                   35%
                 </div>
               </div>
               <h2>Next.js</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "20%" }}
                 >
                   20%
                 </div>
               </div>
               <h2>TypeScript</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "18%" }}
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
+                  style={{ width: "15%" }}
                 >
-                  18%
+                  15%
+                </div>
+              </div>
+              <h2>JavaScript</h2>
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
+                <div
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
+                  style={{ width: "15%" }}
+                >
+                  15%
                 </div>
               </div>
               <h2>HTML</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "17%" }}
                 >
                   17%
                 </div>
               </div>
               <h2>Tailwindcss</h2>
-              <div className="mt-2 w-full bg-green-100 shadow lg:w-1/2">
+              <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
-                  className="text-centert bg-green-600 py-1 text-xs leading-none text-white"
+                  className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
                   style={{ width: "15%" }}
                 >
                   15%
