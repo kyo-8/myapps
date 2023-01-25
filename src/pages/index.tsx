@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <header className="border-b border-gray-200 text-gray-700 dark:text-white">
+      <header className="ticky top-0 z-20 border-b border-gray-200 bg-white py-2 dark:bg-black dark:text-white md:mb-6 md:py-1">
         <div className="container mx-auto flex flex-col items-center p-5 md:flex-row">
           <a
             href="#"
@@ -46,8 +46,8 @@ export default function Home() {
         <div className="container mx-auto flex flex-col items-center py-20 px-8 dark:text-white md:flex-row">
           <div className="mb-16 flex-grow text-center dark:text-white md:w-1/2 md:pr-16 md:text-left lg:pr-24">
             <h1 className="mb-4 text-3xl font-medium text-gray-900 dark:text-white sm:text-6xl">
-              Hi!👋
-              <p>My name is Takatsuki, Kyosuke.</p>
+              Hi! 👋
+              <p>I&#39;m Takatsuki, Kyosuke.</p>
             </h1>
             <p className="mb-8 leading-relaxed">
               はじめまして。以下の技術を用いてポートフォリオを作成しました。
@@ -227,19 +227,20 @@ export default function Home() {
       </section>
 
       <section className="border-t border-gray-200 text-gray-700">
-        <div className="container mx-auto flex flex-wrap py-24 px-5">
+        <div className="container mx-auto flex flex-wrap items-center py-24 px-5">
           {/* left side */}
-          <div className="mb-10 flex w-full justify-center lg:mb-0 lg:w-1/2">
+          <div className="flex w-full justify-center lg:mb-0 lg:w-1/2">
+            {/* <div className="w-5/6 md:w-1/2 lg:max-w-lg"> */}
             <Image
               src={imgpc}
               alt="imgpc"
               // className="lg:pl-15 w-full rounded lg:w-3/4 lg:py-6"
-              className="lg:px-18 mb-10 flex-shrink-0 rounded-lg lg:mt-12 lg:w-3/4 lg:py-5"
+              className="lg:px-18flex-shrink-0 mb-0 rounded-lg lg:mt-12 lg:w-3/4 lg:py-5"
             />
           </div>
           {/* right side */}
           <div className="w-full lg:w-1/2 lg:py-6 lg:pl-12">
-            <h1 className="mb-10 text-center text-2xl font-medium text-gray-900 dark:text-white sm:text-3xl lg:text-left">
+            <h1 className="mt-10 text-center text-2xl font-medium text-gray-900 dark:text-white sm:text-3xl lg:text-left">
               My Skills
             </h1>
             <div className="w-full dark:text-white">
@@ -247,9 +248,9 @@ export default function Home() {
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "70%" }}
+                  style={{ width: "50%" }}
                 >
-                  70%
+                  50%
                 </div>
               </div>
               <h2>Java</h2>
@@ -274,45 +275,45 @@ export default function Home() {
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "20%" }}
+                  style={{ width: "25%" }}
                 >
-                  20%
+                  25%
                 </div>
               </div>
               <h2>TypeScript</h2>
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "15%" }}
+                  style={{ width: "25%" }}
                 >
-                  15%
+                  25%
                 </div>
               </div>
               <h2>JavaScript</h2>
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "15%" }}
+                  style={{ width: "25%" }}
                 >
-                  15%
+                  25%
                 </div>
               </div>
               <h2>HTML</h2>
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "17%" }}
+                  style={{ width: "25%" }}
                 >
-                  17%
+                  25%
                 </div>
               </div>
               <h2>Tailwindcss</h2>
               <div className="mt-2 w-full bg-sky-100 shadow lg:w-1/2">
                 <div
                   className="text-centert bg-sky-600 py-1 text-xs leading-none text-white"
-                  style={{ width: "15%" }}
+                  style={{ width: "25%" }}
                 >
-                  15%
+                  25%
                 </div>
               </div>
             </div>
