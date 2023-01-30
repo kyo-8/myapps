@@ -16,7 +16,7 @@ export default function Home() {
             href="#"
             className="mb-4 font-medium text-gray-900 dark:text-white md:mb-0"
           >
-            <span className="ml-3 text-xl">Takatsuki, Kyosuke</span>
+            <span className="ml-3 text-xl">Takatsuki Kyosuke</span>
           </a>
           <nav className="text-base md:ml-auto">
             <ThemeToggler />
